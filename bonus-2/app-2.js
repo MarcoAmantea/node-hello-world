@@ -1,9 +1,9 @@
 const word = process.argv[2];
-const vowels = ["a","e","i","o","u","A","E","I","O","U"];
+const vowels = ["a","e","i","o","u"];
 let counter = 0;
 for (let i = 0; i < word.length; i++) {
-    const curWord = word[i];
-    if(vowels.includes(curWord)){
+    const curChar = word[i].toLowerCase();
+    if(vowels.includes(curChar)){
         counter++;
     }   
 }
